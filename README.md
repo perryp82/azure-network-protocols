@@ -6,10 +6,6 @@
 
 In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups.
 
-## Video Demonstration
-
-- ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com)
-
 ## Environments and Technologies Used
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -21,7 +17,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 ## Operating Systems Used
 
 - Windows 10 (21H2)
-- Ubuntu Server 20.04
+- Ubuntu Server 22.04
 
 ## High-Level Steps
 
@@ -39,26 +35,60 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
    - Navigate to "Resource Groups" and click "Create."
    - Provide a name for your Resource Group and select a region.
    - Click "Review + Create," then "Create."
+  
+<p>
+<img src="https://i.imgur.com/nkfDzdG.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
 
 3. **Create a Windows 10 Virtual Machine**:
    - Navigate to "Virtual Machines" and click "Create."
    - Select the Resource Group you just created.
    - Configure the Virtual Machine:
      - OS: Windows 10
-     - Allow it to create a new Virtual Network (Vnet) and Subnet.
+     - Create username and password
+     - Head to the Networking section, then create a new virtual network titled "Lab2-vnet"
    - Complete the setup and deploy the VM.
+  
+<p>
+<img src="https://i.imgur.com/ln5shD0.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/dBrcujc.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/MCv4Q1g.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/iU9lo7m.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
 
 4. **Create a Linux (Ubuntu) Virtual Machine**:
    - Navigate to "Virtual Machines" and click "Create."
    - Select the same Resource Group and Virtual Network used for the Windows 10 VM.
    - Configure the Virtual Machine:
-     - OS: Ubuntu Server 20.04
+     - OS: Ubuntu Server 22.04
      - Authentication: Username/Password.
-   - Ensure both VMs are in the same Virtual Network and Subnet.
+   - Ensure both VMs are in the same Virtual Network and Subnet as the Windows 10 VM.
    - Complete the setup and deploy the VM.
 
-> **Note**: End the lab but keep both VMs for Part 2!
+<p>
+<img src="https://i.imgur.com/uWwnh01.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
 
+<p>
+<img src="https://i.imgur.com/6iHplkL.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/K2kS6ye.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/HhOHkjo.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
 ---
 
 ## Part 2: Observe ICMP Traffic
@@ -72,6 +102,14 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
    - Open Command Prompt or PowerShell and run: `ping <Ubuntu VM Private IP>`.
    - Observe the ping requests and replies in Wireshark.
 6. From the Windows 10 VM, ping a public website (e.g., `www.google.com`) and observe the ICMP traffic in Wireshark.
+
+<p>
+<img src="https://i.imgur.com/nkfDzdG.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/nkfDzdG.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
 
 ---
 
@@ -87,6 +125,22 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 5. Re-enable ICMP traffic in the Network Security Group.
 6. Observe the ICMP traffic in Wireshark and the command line Ping activity (should resume).
 7. Stop the ping activity.
+
+<p>
+<img src="https://i.imgur.com/nkfDzdG.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/nkfDzdG.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/nkfDzdG.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/nkfDzdG.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
 
 ### Observe SSH Traffic
 
