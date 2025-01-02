@@ -89,6 +89,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
 <img src="https://i.imgur.com/HhOHkjo.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
 </p>
+
 ---
 
 ## Part 2: Observe ICMP Traffic
@@ -139,10 +140,6 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 
 <p>
-<img src="https://i.imgur.com/nkfDzdG.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
-</p>
-
-<p>
 <img src="https://i.imgur.com/37YhB1B.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
 </p>
 
@@ -190,8 +187,6 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 1. In Wireshark, filter for RDP traffic:
    - Use the filter: `tcp.port == 3389`.
 2. Observe the continuous RDP traffic between the Windows 10 VM and your local machine.
-   - **Why is traffic continuous?**
-     - The RDP protocol streams a live session, so traffic is constantly transmitted.
 
 <p>
 <img src="https://i.imgur.com/AblB0s9.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
