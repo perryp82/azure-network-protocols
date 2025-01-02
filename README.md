@@ -104,11 +104,11 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 6. From the Windows 10 VM, ping a public website (e.g., `www.google.com`) and observe the ICMP traffic in Wireshark.
 
 <p>
-<img src="https://i.imgur.com/nkfDzdG.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+<img src="https://i.imgur.com/iN88a8x.png" height="80%" width="80%" alt="Step 2 Lab 2"/>
 </p>
 
 <p>
-<img src="https://i.imgur.com/nkfDzdG.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+<img src="https://i.imgur.com/jcsAXgl.png" height="80%" width="80%" alt="Step 2 Lab 2"/>
 </p>
 
 ---
@@ -127,7 +127,15 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 7. Stop the ping activity.
 
 <p>
-<img src="https://i.imgur.com/nkfDzdG.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+<img src="https://i.imgur.com/X9VBE8M.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/xOvIUta.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/p8MGqMZ.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
 </p>
 
 <p>
@@ -135,11 +143,11 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 
 <p>
-<img src="https://i.imgur.com/nkfDzdG.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+<img src="https://i.imgur.com/37YhB1B.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
 </p>
 
 <p>
-<img src="https://i.imgur.com/nkfDzdG.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+<img src="https://i.imgur.com/7O8lApB.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
 </p>
 
 ### Observe SSH Traffic
@@ -151,6 +159,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 3. Type commands within the SSH session and observe the SSH traffic in Wireshark.
 4. Exit the SSH session: `exit`.
 
+<p>
+<img src="https://i.imgur.com/4UxjL6i.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
+
 ### Observe DHCP Traffic
 
 1. In Wireshark, filter for DHCP traffic.
@@ -158,12 +170,20 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
    - Open PowerShell as admin and run: `ipconfig /renew`.
 3. Observe the DHCP traffic in Wireshark.
 
+<p>
+<img src="https://i.imgur.com/b11FUBi.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
+
 ### Observe DNS Traffic
 
 1. In Wireshark, filter for DNS traffic.
 2. From the Windows 10 VM, use `nslookup` to find IP addresses for websites:
    - Example: `nslookup google.com`, `nslookup disney.com`.
 3. Observe the DNS traffic in Wireshark.
+
+<p>
+<img src="https://i.imgur.com/gZnp0cn.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
+</p>
 
 ### Observe RDP Traffic
 
@@ -173,12 +193,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
    - **Why is traffic continuous?**
      - The RDP protocol streams a live session, so traffic is constantly transmitted.
 
----
-
-## Actions and Observations
-
 <p>
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Observations"/>
+<img src="https://i.imgur.com/AblB0s9.png" height="80%" width="80%" alt="Step 1 Lab 2"/>
 </p>
 
-Throughout the lab, observe how different protocols generate unique traffic patterns in Wireshark and how Network Security Group rules impact connectivity.
+---
